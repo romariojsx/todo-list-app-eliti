@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/dark-theme.css">
+
+  <title>Todo List App | ELITI</title>
+</head>
+
+<body>
+  <main class="image-light header">
+    <div class="card">
+      <div class="darkmode-icon">
+        <h1>Todo</h1>
+        <div>
+          <img class="moon" id="moon" src="/images/icon-moon.svg" alt="moon">
+          <img class="sun" id="sun" src="/images/icon-sun.svg" alt="sun">
+        </div>
+      </div>
+      <div class="todo-form">
+
+        <div class="inputText">
+          <div class="circulo"></div>
+          <input type="text" required id="getInput" placeholder="Criar novo Todo...">
+        </div>
+      </div>
+
+      <div class="item-container">
+        <ul class="item-lista">
+
+        </ul>
+        <div class="items">
+          <div id="NumberItems" class="status"></div>
+          <div><a>Tudo</a></div>
+          <div onclick="tarefas()"><a>Ativo</a></div>
+          <div onclick="concluidos()"><a>Concluido</a></div>
+          <div><a id="deleteAll">Limpar Tudo</a></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

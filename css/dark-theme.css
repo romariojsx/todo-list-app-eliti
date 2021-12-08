@@ -1,0 +1,58 @@
+/* Dark Theme */
+:root {
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+  --Very-Dark-Grayish: hsl(237, 14%, 26%);
+
+  --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+}
+
+/* .items-footer-darkmode {
+  background-color: var(--Very-Dark-Desaturated-Blue) !important;
+  color: var(--Light-Grayish-Blue);
+} */
+
+.imagem-dark {
+  background-image: url('/images/bg-desktop-dark.jpg');
+}
+
+.dark_Mode {
+  background-color: var(--Very-Dark-Blue);
+}
+
+.sun,
+.moon {
+  cursor: pointer;
+}
+
+.todo-form-darkmode {
+  background-color: var(--Very-Dark-Desaturated-Blue);
+  color: var(--Very-Dark-Grayish-Blue);
+}
+
+.items-darkmode-form {
+  background-color: var(--Very-Dark-Desaturated-Blue);
+  color: var(--Light-Grayish-Blue);
+}
+
+.items-form-darkmode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 20px;
+  background-color: var(--Very-Dark-Desaturated-Blue);
+  border-radius: 8px;
+}
+
+.items-form-darkmode:hover,
+.item-container-darkmode a:hover {
+  color: var(--Light-Grayish-Blue-hover);
+}
+.item-container-darkmode {
+  background-color: var(--Very-Dark-Desaturated-Blue);
+  color: var(--Light-Grayish-Blue);
+}

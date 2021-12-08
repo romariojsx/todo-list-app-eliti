@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.check {
+  background: linear-gradient(
+    90deg,
+    rgba(192, 88, 243, 1) 25%,
+    rgba(87, 221, 255, 1) 72%
+  );
+}
+
+.complete {
+  background: linear-gradient(
+    90deg,
+    rgba(192, 88, 243, 1) 25%,
+    rgba(87, 221, 255, 1) 72%
+  );
+}
+.icon_check {
+  opacity: 0;
+}
+
+.complete .icon_check {
+  opacity: 1;
+}
+
+.check-text {
+  text-decoration: line-through;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  font-size: 18px;
+}
+
+.image-light {
+  background-image: url('/images/bg-desktop-light.jpg');
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-darkmode {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  padding-top: 70px;
+}
+
+.card {
+  width: 40vw;
+  margin: 0 auto;
+}
+
+.card h1 {
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  margin-bottom: 15px;
+}
+
+.darkmode-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.darkmode-icon > div img {
+  display: inline-block;
+}
+
+#sun {
+  display: none;
+}
+.circulo {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid hsl(233, 14%, 35%);
+  cursor: pointer;
+}
+
+.button_icon_check {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid hsl(233, 14%, 35%);
+  cursor: pointer;
+  background-color: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-form {
+  background-color: var(--Very-Light-Gray);
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.inputText {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  justify-content: space-between;
+}
+
+.inputText input {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  padding: 12px;
+  width: 90%;
+}
+
+.inputText input:focus {
+  outline: 0;
+}
+
+/* lista de itens */
+
+.todo_div {
+  height: 20px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid hsl(233, 11%, 84%);
+}
+
+.todo_item {
+  order: 1;
+  position: absolute;
+  left: 15%;
+}
+
+.button_icon_check {
+  order: 0;
+}
+
+.button_icon_delete {
+  order: 2;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 20px;
+  background-color: var(--Very-Light-Gray);
+  color: #fff;
+  border-radius: 8px;
+}
+
+.content-lista {
+  position: absolute;
+  left: 15%;
+}
+
+.items a {
+  color: var(--Very-Dark-Grayish-Blue);
+  cursor: pointer;
+}
+
+.button_icon_delete {
+  background-color: transparent;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  overflow: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dark-mode-body {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90vw;
+  }
+}
+
+/* Light Theme */
+
+:root {
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+  --Light-Grayish-Blue: hsl(233, 11%, 84%);
+  --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+  --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+}
+
+.card h1 {
+  color: var(--Very-Light-Gray);
+}
+
+.inputText input {
+  color: var(--Very-Dark-Grayish-Blue);
+}
+
+.item-container {
+  border-radius: 8px;
+  margin: auto;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 40%);
+  background-color: #fff;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid var(--Dark-Grayish-Blue);
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 20px;
+  background-color: var(--Very-Light-Gray);
+  color: var(--Very-Dark-Grayish-Blue);
+  border-radius: 8px;
+}
+
+.deletar-item {
+  background-color: transparent;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  overflow: none;
+  border: none;
+  color: var(--Very-Dark-Grayish-Blue);
+  cursor: pointer;
+}
